@@ -1,0 +1,328 @@
+A)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cout<<i<<endl;
+    }
+}
+
+B)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  long long n;
+  cin>>n;
+  if(n==1)cout<<-1<<endl;
+  else{
+  for(int i=1;i<=n;i++)
+  {
+      if(i%2==0)cout<<i<<endl;
+  }
+  }
+}
+
+C)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,n,even=0, odd=0, pos=0, neg=0;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cin>>a;
+        if(a%2==0)even++;
+        if(a%2!=0)odd++;
+        if(a>0)pos++;
+        if(a<0)neg++;
+    }
+    cout<<"Even: "<<even<<endl;
+     cout<<"Odd: "<<odd<<endl;
+      cout<<"Positive: "<<pos<<endl;
+       cout<<"Negative: "<<neg<<endl;
+
+}
+
+D)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a;
+    while(1)
+    {
+        cin>>a;
+        if(a==1999)
+        {
+            cout<<"Correct"<<endl;
+            break;
+        }
+        else
+            cout<<"Wrong"<<endl;
+    }
+}
+
+E)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,n,mx=-1;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>a;
+        if(a>mx)
+        mx=a;
+    }
+    cout<<mx<<endl;
+}
+
+F)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;  // Read the input number N
+
+    // Loop through numbers 1 to 12 to print the multiplication table
+    for (int i = 1; i <= 12; ++i) {
+        cout << N << " * " << i << " = " << N * i << endl;
+    }
+
+    return 0;
+}
+
+K)
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;  // Corrected input syntax
+    vector<long long> v;
+    
+    // Loop to find divisors
+    for (int i = 1; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            long long vagfol = n / i;
+            if (i != vagfol) {
+                v.push_back(i);
+                v.push_back(vagfol);  // Corrected: push back both divisors
+            } else {
+                v.push_back(i);  // Corrected: push back only once if divisors are equal
+            }
+        }
+    }
+    
+    sort(v.begin(), v.end());
+    
+    // Output the divisors
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << endl;
+    }
+
+    return 0;
+}
+
+H)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long n;
+    cin>>n;
+    bool flag=true;
+    for(long long i=2;i<=sqrt(n);i++)
+    {
+        if(n%i==0)
+        {
+            flag=false;
+            break;
+        }
+        }
+        if(flag)
+            cout<<"YES"<<endl;
+            else
+
+        cout<<"NO"<<endl;
+    }
+
+T)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long row;
+    cin>>row;
+    for(long long line=1;line<=row;line++)
+
+    {
+        for(long long space=1;space<=(row-line);space++)
+        {
+            cout<<" ";
+        }
+    for(long long star= 1;star<=(2*line)-1;star++)
+    {
+        cout<<"*";
+    }cout<<endl;
+    }
+}
+
+P)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long row;
+    cin>>row;
+    for(long long line=row;line>=1;line--)
+    {
+        for(long long star=1;star<=line;star++)
+        {
+            cout<<"*";
+        }
+
+        cout<<endl;
+    }
+}
+
+O)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long row;
+    cin>>row;
+    for(long long line=1;line<=row;line++)
+    {
+        for(long long star=1;star<=line;star++)
+        {
+            cout<<"*";
+        }
+
+        cout<<endl;
+    }
+}
+
+I)
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+  
+    int N;
+    cin >> N;
+    
+    string str = to_string(N);
+    
+    string reversed_str = str;
+    reverse(reversed_str.begin(), reversed_str.end());
+    
+    int reversed_number = stoi(reversed_str); 
+    cout << reversed_number << endl;
+    
+
+    if (str == reversed_str) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+    
+    return 0;
+}
+
+W)
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long n;
+    cin>>n;
+    for(long long line=1;line<=n;line++)
+    {
+        for(long long  space=1;space<=(n-line);space++)
+        {
+            cout<<" ";
+        }
+          for( long long star=1;star<=(2*line)-1;star++)
+          {
+               cout<<"*";
+          }
+         cout<<endl;
+    }
+
+        for(long long  line=n;line>=1;line--)
+    {
+        for(long long space=1;space<=(n-line);space++)
+        {
+            cout<<" ";
+        }
+          for(long long star=1;star<=(2*line)-1;star++)
+          {
+               cout<<"*";
+          }
+         cout<<endl;
+}
+}
+
+X)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long t;
+    cin>>t;
+    while(t--)
+    {
+          long long n,one=0,r;
+    cin>>n;
+       while(n!=0)
+       {
+           r=n%2;
+           if(r==1)one++;
+           n=n/2;
+       }
+long long ans=pow(2,one);
+       cout<<ans-1<<endl;
+
+    }
+}
+
+Q)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long long t;
+    cin >> t;
+    while (t--)
+    {
+        long long n, r;
+        cin >> n;
+        if (n == 0)
+            cout << 0;
+        else
+        {
+            while (n != 0)
+            {
+                r = n % 10;
+                cout << r << " ";
+                n = n / 10; // Corrected this line
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
