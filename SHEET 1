@@ -1,0 +1,509 @@
+A)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string S;
+cin>>S;
+cout<<"Hello, "<<S<<endl;
+}
+
+B)
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+long long a,b;
+char c;
+double d,e;
+cin>>a>>b>>c>>d>>e;
+cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl<<e<<endl;
+}
+
+C)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,b;
+    cin>>a>>b;
+    cout<<a<<" + "<< b <<" = "<<a+b<<endl;
+      cout<<a<<" * "<< b <<" = "<<a*b<<endl;
+        cout<<a<<" - "<< b <<" = "<<a-b<<endl;
+ 
+}
+
+D)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,b,c,d;
+    cin>>a>>b>>c>>d;
+    cout<<"Difference = "<<(a*b)-(c*d)<<endl;
+}
+
+E)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double r;
+    cin>>r;
+    cout<<fixed<<setprecision(9)<<3.141592653*r*r<<endl;
+}
+
+F)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double r;
+    cin>>r;
+    cout<<fixed<<setprecision(9)<<3.141592653*r*r<<endl;
+}
+
+G)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long n;
+    cin>>n;
+   
+}
+
+H)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,b;
+    cin>>a>>b;
+    cout<<"floor "<<a<<" / "<<b<<" = "<<floor(a*1.00/b)<<endl;
+        cout<<"ceil "<<a<<" / "<<b<<" = "<<ceil(a*1.00/b)<<endl;
+            cout<<"round "<<a<<" / "<<b<<" = "<<round(a*1.00/b)<<endl;
+ 
+ 
+}
+
+I)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,b;
+    cin>>a>>b;
+    if(a>=b)
+    {
+        cout<<"Yes" <<endl;
+ 
+    }
+    else
+ 
+        cout<<"No" <<endl;
+}
+
+J)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B; 
+    if (A % B == 0 || B % A == 0) {
+        cout << "Multiples" << endl;
+    } else {
+        cout << "No Multiples" << endl;
+    }
+
+    return 0;
+}
+
+K)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int A, B, C;
+    cin >> A >> B >> C;
+
+    
+    int minimum = min({A, B, C});
+    int maximum = max({A, B, C});
+
+    
+    cout << minimum << " " << maximum << endl;
+
+}
+
+L)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string s1,s2,s3,s4;
+    cin>>s1>>s2>>s3>>s4;
+    if (s2 == s4)
+        cout<<"ARE Brothers"<<endl;
+else
+    cout<<"NOT"<<endl;
+
+}
+
+M)
+#include<iostream>
+using namespace std;
+int main()
+{
+    char chr;
+    cin>>chr;
+    if (chr >= 97 && chr <= 122)
+    {
+        cout << "ALPHA" <<endl;
+         cout << "IS SMALL" <<endl;
+    }
+    else if (chr >= 65 && chr <=90)
+    {
+         cout << "ALPHA" <<endl;
+         cout << "IS CAPITAL" <<endl;
+    }
+
+        else
+    {
+         cout << "IS DIGIT" <<endl;
+    }
+
+}
+
+N)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char x;
+    cin>>x;if(x>= 'A' && x<='Z')
+    {
+     cout<<(char)(x+32);
+
+    }
+    else
+    {
+      cout<<(char)(x-32);
+    }
+    }
+
+ O)
+ #include <bits/stdc++.h>
+ using namespace std;
+ 
+ int main() {
+     int A, B;
+     char S;
+     
+     cin >> A >> S >> B;
+     
+     if (S == '+') cout << A + B << endl;
+     else if (S == '-') cout << A - B << endl;
+     else if (S == '*') cout << A * B << endl;
+     else if (S == '/') cout << A / B << endl;
+     
+ }
+
+ P)
+ #include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a;
+    cin>>a;
+long long ans=a/1000;
+    if(ans%2==0)cout<<"EVEN"<<endl;
+    else cout<<"ODD"<<endl;
+}
+
+Q)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double x, y;
+    cin >> x >> y;
+
+    if (x > 0 && y > 0)
+     {
+        cout << "Q1";
+    }
+    if (x < 0 && y > 0)
+    {
+        cout << "Q2";
+    }
+    if (x < 0 && y < 0)
+     {
+        cout << "Q3";
+    }
+    if (x > 0 && y < 0) {
+        cout << "Q4";
+    }
+   if (x == 0 && y == 0) {
+        cout << "Origem";
+    }
+    if (y == 0 && x!=0) {
+        cout << "Eixo X";
+    }
+    if (x == 0 && y!=0) {
+        cout << "Eixo Y";
+    }
+}
+
+R)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+
+    int years = N / 365;  
+    N %= 365;  
+
+    int months = N / 30;  
+    int days = N % 30;    
+
+    cout << years << " years" << endl;
+    cout << months << " months" << endl;
+    cout << days << " days" << endl;
+}
+
+S)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double n;
+    cin>>n;
+    if(n>=0 && n<=25)
+    {
+        cout<<"Interval [0,25]";
+    }
+    else if(n>25 && n<=50)
+    {
+        cout<<"Interval (25,50]";
+    }
+    else if(n>50 && n<=75)
+    {
+        cout<<"Interval (50,75]";
+    }
+    else if(n>75 && n<=100)
+    {
+        cout<<"Interval (75,100]";
+    }
+    else
+    {
+        cout<<"Out of Intervals";
+    }
+
+}
+
+T)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long A,B,C;
+    cin>>A>>B>>C;
+    int a[3];
+    a[0]=A;
+    a[1]=B;
+    a[2]=C;
+    sort(a,a+3);
+    cout<<a[0]<<endl;
+    cout<<a[1]<<endl;
+    cout<<a[2]<<endl;
+
+    cout<<endl;
+
+    cout<<A<<endl;
+    cout<<B<<endl;
+    cout<<C<<endl;
+
+}
+
+U)
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double n;
+    cin>>n;
+   int u = (int) n;
+   if(n-u>0)
+   {
+    cout<<"float "<<u<<" "<<n-u<<endl;
+   }
+   else
+   {
+    cout<<"int "<<u<<endl;
+   }
+}
+
+V)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  long long A,B;
+  char S;
+    cin>>A>>S>>B;
+    if(S=='<')
+    {
+        if(A<B)
+        {
+            cout<<"Right"<<endl;
+        }
+        else
+        {
+            cout<<"Wrong"<<endl;
+        }
+    }
+    else if(S=='>')
+    {
+        if(A>B)
+        {
+            cout<<"Right"<<endl;
+        }
+        else
+        {
+            cout<<"Wrong"<<endl;
+        }
+    }
+    else if(S=='=')
+    {
+        if(A==B)
+        {
+            cout<<"Right"<<endl;
+        }
+        else
+        {
+            cout<<"Wrong"<<endl;
+        }
+    }
+}
+
+W)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+ long long a,b,c;
+ char s,q;
+ cin>>a>>s>>b>>q>>c;
+    if(s=='+')
+    {
+        if(a+b==c)
+        {
+            cout<<"Yes"<<endl;
+        }
+        else
+        {
+            cout<<a+b;
+        }
+    }
+    else if(s=='-')
+    {
+        if(a-b==c)
+        {
+            cout<<"Yes"<<endl;
+        }
+        else
+        {
+            cout<<a-b;
+        }
+    }
+    else if(s=='*')
+    {
+        if(a*b==c)
+        {
+            cout<<"Yes"<<endl;
+        }
+        else
+        {
+            cout<<a*b;
+        }
+    }
+}
+
+X)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if(c>a && c<=b)
+    {
+        if(d>=b)
+        {
+            cout<<c<<" "<<b;
+        }
+        else if(b>=d)
+        {
+            cout<<c<<" "<<d;
+        }
+    }
+    else if(a>=c && a<=d)
+    {
+        if(b>=d)
+        {
+            cout<<a<<" "<<d;
+        }
+        else if(d>=b)
+        {
+            cout<<a<<" "<<b;
+        }
+    }
+    else
+    {
+        cout<<-1;
+    }
+}
+
+Y)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    a=a%100;
+    b=b%100;
+    c=c%100;
+    d=d%100;
+    int x=a*b*c*d;
+    int y=x%100;
+    if(y<10)
+    {
+        cout<<0<<y<<endl;
+    }
+    else
+    {
+        cout<<y<<endl;
+    }
+}
+
+Z)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if(b*log(a)>d*log(c))
+    {
+        cout<<"YES"<<endl;
+    }
+    else
+    {
+        cout<<"NO"<<endl;
+    }
+}
